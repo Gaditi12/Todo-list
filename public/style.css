@@ -11,6 +11,7 @@ body {
 .container {
   background-color: #3b6b2d;
   margin: auto;
+  margin-top: 20px;
   padding: 10px;
   width: 40%;
   text-align: center;

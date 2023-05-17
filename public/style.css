@@ -5,13 +5,15 @@
 }
 
 body {
-  background-color: #78b4ed;
+  background-color: #e4e9fd;
+  background-image: -webkit-linear-gradient(65deg, #a683e3 50%, #e4e9fd 50%);
+}
+html {
+  font-family: "helvetica neue";
 }
 .container {
   max-width: 1440px;
 
-  overflow-x: hidden;
-  overflow-y: auto;
   background-color: aliceblue;
   width: 40%;
   margin: 0 auto;
@@ -19,6 +21,7 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  box-shadow: 5px 5px 15px -5px rgba(0, 0, 0, 0.3);
 }
 .text-center {
   text-align: center;
@@ -54,15 +57,6 @@ body {
   margin: 0 5px;
 }
 
-.delete-all {
-  width: 400px;
-}
-
 .actions-box {
   cursor: pointer;
-}
-
-.back-btn {
-  margin-top: 5px;
-  width: 100%;
 }

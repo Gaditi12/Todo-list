@@ -1,12 +1,6 @@
 import { ADD_TODO, DELETE_TODO } from "../action-creators/actionTypes";
 
-const initialState = [
-  {
-    id: 1,
-    todo: "buy fruits",
-    completed: false,
-  },
-];
+const initialState = [];
 
 export const operationsReducer = (state = initialState, action) => {
   switch (action.type) {

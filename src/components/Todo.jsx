@@ -1,9 +1,23 @@
-import React from "react";
+// import React, { memo } from "react";
 
-const Todo = () => {
-  return (
-    <>
-      <div className="container">
+// const Todo = ({ todos, addTodo }) => {
+//   return (
+//     <>
+//       <h2>My Todos</h2>
+//       {todos.map((todo, index) => {
+//         return <p key={index}>{todo + index}</p>;
+//       })}
+//       <button>
+//         <i className="fa fa-plus"></i>
+//       </button>
+//     </>
+//   );
+// };
+
+// export default memo(Todo);
+
+{
+  /* <div className="container">
         <h2>ToDo List</h2>
         <br />
         <p className="todos">
@@ -11,9 +25,5 @@ const Todo = () => {
 
           <i className="fa fa-plus"></i>
         </p>
-      </div>
-    </>
-  );
-};
-
-export default Todo;
+      </div> */
+}

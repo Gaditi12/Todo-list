@@ -1,7 +1,15 @@
-import {
-  ADD_TODO,
-  DELETE_TODO,
-  EDIT_TODO,
-  UPDATE_TODO,
-  MARK_COMPLETED,
-} from "./actionTypes";
+import { ADD_TODO, DELETE_TODO } from "./actionTypes";
+
+export const addTodo = (payload) => {
+  return {
+    type: ADD_TODO,
+    payload,
+  };
+};
+
+export const deleteTodo = (payload) => {
+  return {
+    type: DELETE_TODO,
+    payload,
+  };
+};

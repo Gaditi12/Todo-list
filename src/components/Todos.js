@@ -3,7 +3,7 @@ import { useSelector, useDispatch } from "react-redux";
 import { Icon } from "react-icons-kit";
 import { trash } from "react-icons-kit/feather/trash";
 import { edit2 } from "react-icons-kit/feather/edit2";
-import { deleteTodo } from "../state/action-creators";
+import { deleteTodo, handleCheckbox } from "../state/action-creators";
 export const Todos = ({ handleEditClick, isEdit }) => {
   const dispatch = useDispatch();
   const todos = useSelector((state) => state.operationsReducer);
@@ -15,7 +15,7 @@ export const Todos = ({ handleEditClick, isEdit }) => {
           <input
             type="checkbox"
             checked={todo.completed}
-            // onChange={() => dispatch(handleCheckbox(todo.id))}
+            onChange={() => dispatch(handleCheckbox(todo.id))}
           />
         )}
         <p
